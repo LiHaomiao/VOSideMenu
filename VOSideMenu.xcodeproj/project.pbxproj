@@ -14,13 +14,17 @@
 		3E14917D19A8699A007A2E2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14917C19A8699A007A2E2A /* main.m */; };
 		3E14918119A8699A007A2E2A /* VOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14918019A8699A007A2E2A /* VOAppDelegate.m */; };
 		3E14918419A8699A007A2E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E14918219A8699A007A2E2A /* Main.storyboard */; };
-		3E14918719A8699A007A2E2A /* VOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14918619A8699A007A2E2A /* VOViewController.m */; };
 		3E14918919A8699A007A2E2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E14918819A8699A007A2E2A /* Images.xcassets */; };
 		3E14919019A8699A007A2E2A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E14918F19A8699A007A2E2A /* XCTest.framework */; };
 		3E14919119A8699A007A2E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E14917019A8699A007A2E2A /* Foundation.framework */; };
 		3E14919219A8699A007A2E2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E14917419A8699A007A2E2A /* UIKit.framework */; };
 		3E14919A19A8699A007A2E2A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E14919819A8699A007A2E2A /* InfoPlist.strings */; };
 		3E14919C19A8699A007A2E2A /* VOSideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14919B19A8699A007A2E2A /* VOSideMenuTests.m */; };
+		3E1491A719A869BC007A2E2A /* VOSideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1491A619A869BC007A2E2A /* VOSideMenuController.m */; };
+		3E1491AB19A86A13007A2E2A /* VOCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1491AA19A86A13007A2E2A /* VOCenterViewController.m */; };
+		3E1491B119A86A7D007A2E2A /* VOLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1491B019A86A7D007A2E2A /* VOLeftViewController.m */; };
+		3E1491B419A86A89007A2E2A /* VORigthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1491B319A86A89007A2E2A /* VORigthViewController.m */; };
+		3E1491B819A8872F007A2E2A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1491B719A8872F007A2E2A /* UIImage+ImageEffects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,23 @@
 		3E14917F19A8699A007A2E2A /* VOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOAppDelegate.h; sourceTree = "<group>"; };
 		3E14918019A8699A007A2E2A /* VOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOAppDelegate.m; sourceTree = "<group>"; };
 		3E14918319A8699A007A2E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E14918519A8699A007A2E2A /* VOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VOViewController.h; sourceTree = "<group>"; };
-		3E14918619A8699A007A2E2A /* VOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOViewController.m; sourceTree = "<group>"; };
 		3E14918819A8699A007A2E2A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E14918E19A8699A007A2E2A /* VOSideMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOSideMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E14918F19A8699A007A2E2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E14919719A8699A007A2E2A /* VOSideMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VOSideMenuTests-Info.plist"; sourceTree = "<group>"; };
 		3E14919919A8699A007A2E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E14919B19A8699A007A2E2A /* VOSideMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VOSideMenuTests.m; sourceTree = "<group>"; };
+		3E1491A519A869BC007A2E2A /* VOSideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOSideMenuController.h; path = Controller/VOSideMenuController.h; sourceTree = "<group>"; };
+		3E1491A619A869BC007A2E2A /* VOSideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOSideMenuController.m; path = Controller/VOSideMenuController.m; sourceTree = "<group>"; };
+		3E1491A919A86A13007A2E2A /* VOCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOCenterViewController.h; path = Controller/VOCenterViewController.h; sourceTree = "<group>"; };
+		3E1491AA19A86A13007A2E2A /* VOCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOCenterViewController.m; path = Controller/VOCenterViewController.m; sourceTree = "<group>"; };
+		3E1491AF19A86A7D007A2E2A /* VOLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VOLeftViewController.h; path = Controller/VOLeftViewController.h; sourceTree = "<group>"; };
+		3E1491B019A86A7D007A2E2A /* VOLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VOLeftViewController.m; path = Controller/VOLeftViewController.m; sourceTree = "<group>"; };
+		3E1491B219A86A89007A2E2A /* VORigthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VORigthViewController.h; path = Controller/VORigthViewController.h; sourceTree = "<group>"; };
+		3E1491B319A86A89007A2E2A /* VORigthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VORigthViewController.m; path = Controller/VORigthViewController.m; sourceTree = "<group>"; };
+		3E1491B619A8872F007A2E2A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Class/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		3E1491B719A8872F007A2E2A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Class/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		3E1491BA19A89749007A2E2A /* VOSideMenuProcotol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VOSideMenuProcotol.h; path = Protocol/VOSideMenuProcotol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +125,12 @@
 		3E14917619A8699A007A2E2A /* VOSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				3E1491B919A8971D007A2E2A /* Protocol */,
+				3E1491B519A886BC007A2E2A /* Class */,
+				3E1491A819A869C3007A2E2A /* Controller */,
 				3E14917F19A8699A007A2E2A /* VOAppDelegate.h */,
 				3E14918019A8699A007A2E2A /* VOAppDelegate.m */,
 				3E14918219A8699A007A2E2A /* Main.storyboard */,
-				3E14918519A8699A007A2E2A /* VOViewController.h */,
-				3E14918619A8699A007A2E2A /* VOViewController.m */,
 				3E14918819A8699A007A2E2A /* Images.xcassets */,
 				3E14917719A8699A007A2E2A /* Supporting Files */,
 			);
@@ -150,6 +164,38 @@
 				3E14919819A8699A007A2E2A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E1491A819A869C3007A2E2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E1491A519A869BC007A2E2A /* VOSideMenuController.h */,
+				3E1491A619A869BC007A2E2A /* VOSideMenuController.m */,
+				3E1491A919A86A13007A2E2A /* VOCenterViewController.h */,
+				3E1491AA19A86A13007A2E2A /* VOCenterViewController.m */,
+				3E1491AF19A86A7D007A2E2A /* VOLeftViewController.h */,
+				3E1491B019A86A7D007A2E2A /* VOLeftViewController.m */,
+				3E1491B219A86A89007A2E2A /* VORigthViewController.h */,
+				3E1491B319A86A89007A2E2A /* VORigthViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3E1491B519A886BC007A2E2A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3E1491B619A8872F007A2E2A /* UIImage+ImageEffects.h */,
+				3E1491B719A8872F007A2E2A /* UIImage+ImageEffects.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		3E1491B919A8971D007A2E2A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3E1491BA19A89749007A2E2A /* VOSideMenuProcotol.h */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1491AB19A86A13007A2E2A /* VOCenterViewController.m in Sources */,
+				3E1491B119A86A7D007A2E2A /* VOLeftViewController.m in Sources */,
+				3E1491B819A8872F007A2E2A /* UIImage+ImageEffects.m in Sources */,
+				3E1491B419A86A89007A2E2A /* VORigthViewController.m in Sources */,
+				3E1491A719A869BC007A2E2A /* VOSideMenuController.m in Sources */,
 				3E14917D19A8699A007A2E2A /* main.m in Sources */,
-				3E14918719A8699A007A2E2A /* VOViewController.m in Sources */,
 				3E14918119A8699A007A2E2A /* VOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

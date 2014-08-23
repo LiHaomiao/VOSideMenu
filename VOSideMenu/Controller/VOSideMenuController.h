@@ -1,5 +1,5 @@
 //
-//  VOViewController.h
+//  VOSideMenuController.h
 //  VOSideMenu
 //
 //  Created by Valo Lee on 14-8-23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VOViewController : UIViewController
+@interface VOSideMenuController : UIViewController
 
 @end
