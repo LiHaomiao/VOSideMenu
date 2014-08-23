@@ -10,7 +10,7 @@
 #import "VOCenterViewController.h"
 #import "UIImage+ImageEffects.h"
 
-#define kMaxBlurRadius 5.0
+#define kMaxBlurAlpha 1.0
 
 typedef NS_ENUM(NSUInteger, VOSideMenuState) {
     VOSideMenuStateCenterShow,
@@ -37,8 +37,6 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 // 特效相关
 @property (nonatomic, strong) UIImage *blurImage;
 @property (nonatomic, assign) BOOL showBlurView;
-@property (nonatomic, assign) CGFloat blurRadius;
-
 
 @end
 
@@ -79,7 +77,7 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 		
 	}
 	// 计算特效参数
-	lastRadius = show? kMaxBlurRadius: 0;
+	lastRadius = show? kMaxBlurAlpha: 0;
 	// 计算动画时间
 	CGFloat duration = ABS(endx - frame.origin.x) / frame.size.width;
 
@@ -88,7 +86,7 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 	[UIView animateWithDuration : duration
 					  animations:^{
 						  view.frame = frame;
-						  self.blurRadius = lastRadius;
+						  self.blurView.alpha = lastRadius;
 					  }];
 }
 
@@ -141,22 +139,16 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 	self.blurView.hidden = !showBlurView;
 }
 
-#pragma mark 设置图片效果
-- (void)setBlurRadius:(CGFloat)blurRadius{
-	_blurRadius = blurRadius;
-	self.blurView.image = [self.blurImage applyBlurWithRadius: blurRadius
-													tintColor: nil
-										saturationDeltaFactor: 1.8
-													maskImage: nil];
-}
-
 #pragma mark 屏幕截图
 - (void)updateBlurView {
     UIGraphicsBeginImageContext(self.centerContainer.bounds.size);
 	[self.centerContainer.layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    self.blurImage = image;
+	self.blurView.image = [image applyBlurWithRadius: 20
+										   tintColor: nil
+							   saturationDeltaFactor: 1.5
+										   maskImage: nil];
 }
 
 #pragma mark - 手势操作
@@ -221,7 +213,7 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 					// 设置左侧页面frame
 					self.leftContainer.frame = frame;
 					// 移动过程中改变特效图片效果
-					self.blurRadius = (frame.size.width + frame.origin.x) / frame.size.width * kMaxBlurRadius;
+					self.blurView.alpha = (frame.size.width + frame.origin.x) / frame.size.width * kMaxBlurAlpha;
 					break;
 				
 					//移动右侧页面的方法
@@ -238,7 +230,7 @@ typedef NS_ENUM(NSUInteger, VOSideMenuState) {
 					// 设置右侧页面frame
 					self.rightContainer.frame = frame;
 					// 移动过程中改变特效图片效果
-					self.blurRadius = (frame.size.width - frame.origin.x) / frame.size.width * kMaxBlurRadius;
+					self.blurView.alpha = (frame.size.width - frame.origin.x) / frame.size.width * kMaxBlurAlpha;
 					break;
 					
 				default:
