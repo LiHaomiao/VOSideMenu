@@ -65,7 +65,6 @@
 		3E1491B319A86A89007A2E2A /* VORigthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VORigthViewController.m; path = Controller/VORigthViewController.m; sourceTree = "<group>"; };
 		3E1491B619A8872F007A2E2A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Class/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		3E1491B719A8872F007A2E2A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Class/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		3E1491BA19A89749007A2E2A /* VOSideMenuProcotol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VOSideMenuProcotol.h; path = Protocol/VOSideMenuProcotol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +124,6 @@
 		3E14917619A8699A007A2E2A /* VOSideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				3E1491B919A8971D007A2E2A /* Protocol */,
 				3E1491B519A886BC007A2E2A /* Class */,
 				3E1491A819A869C3007A2E2A /* Controller */,
 				3E14917F19A8699A007A2E2A /* VOAppDelegate.h */,
@@ -188,14 +186,6 @@
 				3E1491B719A8872F007A2E2A /* UIImage+ImageEffects.m */,
 			);
 			name = Class;
-			sourceTree = "<group>";
-		};
-		3E1491B919A8971D007A2E2A /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				3E1491BA19A89749007A2E2A /* VOSideMenuProcotol.h */,
-			);
-			name = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +497,7 @@
 				3E1491A119A8699A007A2E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E1491A219A8699A007A2E2A /* Build configuration list for PBXNativeTarget "VOSideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +506,7 @@
 				3E1491A419A8699A007A2E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "VOSideMenuController.h"
 @interface VOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, weak) VOSideMenuController *sideMenuController;
+@property (nonatomic, assign) VOSideMenuState sideMenuState;
 
 @end

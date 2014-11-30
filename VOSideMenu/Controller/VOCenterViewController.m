@@ -7,8 +7,11 @@
 //
 
 #import "VOCenterViewController.h"
+#import "VOAppDelegate.h"
 
 @interface VOCenterViewController ()
+
+@property (nonatomic, weak) VOAppDelegate *app;
 
 @end
 
@@ -27,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	self.app = [UIApplication sharedApplication].delegate;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,17 +41,17 @@
 
 #pragma mark - 按钮点击事件
 - (IBAction)showLeftView:(UIButton *)sender {
-	[self.delegate showLeftView];
+	[self.app.sideMenuController showLeftView];
 }
 
 - (IBAction)showRightView:(UIButton *)sender {
-	[self.delegate showRightView];
+	[self.app.sideMenuController showRightView];
 }
 
 #pragma mark - 手势事件
 // 此处加手势效果,避免在此页面上的textView滚动时,会拉出左右页面.
 - (IBAction)panGestureAction:(UIPanGestureRecognizer *)sender {
-	[self.delegate centerPanGesterAction: sender];
+	[self.app.sideMenuController centerPanGesterAction: sender];
 }
 
 /*

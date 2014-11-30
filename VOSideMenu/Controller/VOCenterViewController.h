@@ -7,10 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VOSideMenuProcotol.h"
-
 @interface VOCenterViewController : UIViewController
-
-@property (nonatomic, weak) id<VOSideMenuProcotol> delegate;
 
 @end

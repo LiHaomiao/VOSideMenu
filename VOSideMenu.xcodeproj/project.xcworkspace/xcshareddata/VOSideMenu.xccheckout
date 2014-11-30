@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5473A4AA-0687-4AC9-9027-21CE70304BD9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VOSideMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>02FE4EED52C4C110F313FBA59A3D245389BCB1EB</key>
+		<string>https://github.com/pozi119/VOSideMenu</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VOSideMenu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>02FE4EED52C4C110F313FBA59A3D245389BCB1EB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pozi119/VOSideMenu</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>02FE4EED52C4C110F313FBA59A3D245389BCB1EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>02FE4EED52C4C110F313FBA59A3D245389BCB1EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VOSideMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
